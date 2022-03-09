@@ -1,6 +1,12 @@
 ## The following code contains work of the United States Government and is not subject to domestic copyright protection under 17 USC § 105.
 ## Additionally, we waive copyright and related rights in the utilized code worldwide through the CC0 1.0 Universal public domain dedication.
 
+"""
+This file has control over CybORG envornment. __init__ creates the environment, initiates all variables keeping track of
+agents, actions, rewards, results, and observations. Functions enable this file to create agents and scenarios,
+check if the goal has been reached, take steps forward, observe those actions and results, reset, pause, and shutdown environment.
+"""
+
 import sys
 import yaml
 

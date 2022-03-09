@@ -7,6 +7,11 @@ from CybORG.Shared.Observation import Observation
 
 
 class Results:
+    """
+    The Results class works closely with the Observation class. It holds information regarding the state, action, observation, reward, and error.
+    Functions keep track of errors that happen and enables external sources to copy the information regarding the current action-observation, as well
+    as printing the results.
+    """
 
     def __init__(self,
                  observation: dict = None,

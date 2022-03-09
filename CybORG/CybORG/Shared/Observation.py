@@ -12,6 +12,10 @@ import CybORG.Shared.Enums as CyEnums
 BROADCAST_ADDRESS = IPv4Address('0.0.0.0')
 
 class Observation:
+    """
+    The Observation class initiates a dictionary to keep track of information regarding the agent, environment, and results (Action-Observation pairs).
+    Overall, this class keeps track of a variety of technical information from username information to agent IP's and action observations.
+    """
 
     def __init__(self, success:bool = None):
         self.data = {"success": CyEnums.TrinaryEnum.UNKNOWN if success == None else CyEnums.TrinaryEnum.parse_bool(success)}

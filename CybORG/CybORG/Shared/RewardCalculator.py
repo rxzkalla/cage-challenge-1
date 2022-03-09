@@ -4,6 +4,11 @@ from CybORG.Shared.Actions.Action import Action
 
 
 class RewardCalculator:
+    """
+    The RewardCalculator sets a base class for the calculators for red and blue agents. Both agents have their own specified class to calculate rewards,
+    but this class initializes the main attributes for the calculator. Initial attributes mainly regard the agent name, state, and observation.
+    Functions can execute calculations and reset the state.
+    """
     def __init__(self, agent_name: str):
         self.agent_name = agent_name
         self.init_state = None
